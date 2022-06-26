@@ -19,7 +19,7 @@ def novo():
     return render_template('novo.html', titulo="Novo Jogo", form=form)
 
 
-@app.route('/criar', methods=['POST',])
+@app.route('/criar', methods=['POST', ])
 def criar():
     form = FormularioJogo(request.form)
 
